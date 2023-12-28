@@ -1,0 +1,18 @@
+User:
+Home
+Pendaftaran > generate pdf
+Galeri
+Tentang kami (SUDAH DESAIN)
+Hubungi kami (SUDAH DESAIN)
+
+Admin
+Dashboard
+Trigger notifikasi
+
+Ini ge berdasarkan fitur yg ada kisaran 400 ge exclude hosting sama domain, poin utama di generate pdf sama trigger notif sama analisis databasenya.
+
+Sama exclude akun smtp juga misal mau kirim pdf ke email user tapi kalo mau langsung download aja gaperlu smtp
+
+REFERENSI:
+https://www.alshatravel.com/
+https://getmasum.com/html-preview/tripx/index.html#
