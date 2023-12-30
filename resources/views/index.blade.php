@@ -71,25 +71,25 @@
 				<div class="row">
 					<div class="col-xl-2 col-md-3 col-sm-4 align-self-center">
 						<div class="site-logo">
-							<a href="index"><img src="{{asset('logo.png')}}" alt=""></a>
+							{{-- <a href="index"><img src="{{asset('logo.png')}}" alt=""></a> --}}
 						</div>
 					</div><!--- END Col -->
 
 					<div class="col-xl-8 col-md-9 col-sm-8 d-flex justify-content-center">
 						<nav id="main-menu">
 							<ul>
-								<li><a href="{{url('/')}}">Beranda</a></li>
-								<li><a href="tour.html">Umroh</a></li>
-								<li><a href="{{url('about')}}">Tentang</a></li>
-								<li><a href="service.html">Layanan</a></li>
-								<li class="menu-item-has-children"><a href="#">Halaman</a>
+								<li><a href="{{url('/')}}" class="text-dark">Beranda</a></li>
+								{{-- <li><a href="tour.html">Umroh</a></li> --}}
+								<li><a href="{{url('about')}}" class="text-dark">Tentang</a></li>
+								{{-- <li><a href="service.html">Layanan</a></li> --}}
+								{{-- <li class="menu-item-has-children"><a href="#">Halaman</a>
 									<ul>
 										<li><a href="tour-details.html">Package Details</a></li>
 										<li><a href="blog-details.html">Blog Details</a></li>
 									</ul>
-								</li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="{{url('contact')}}">Kontak</a></li>
+								</li> --}}
+								{{-- <li><a href="blog.html">Blog</a></li> --}}
+								<li><a href="{{url('contact')}}" class="text-dark">Kontak</a></li>
 							</ul>
 
 						</nav>
@@ -102,18 +102,18 @@
 					</div><!--- END Col -->
 
 					<ul class="mobile_menu">
-						<li><a href="{{url('/')}}">Home</a></li>
-						<li><a href="tour.html">Tour</a></li>
-						<li><a href="{{url('about')}}">About</a></li>
-						<li><a href="service.html">Service</a></li>
-						<li><a href="#">Pages</a>
+						<li><a href="{{url('/')}}">Beranda</a></li>
+						{{-- <li><a href="tour.html">Tour</a></li> --}}
+						<li><a href="{{url('about')}}">Tentang</a></li>
+						{{-- <li><a href="service.html">Service</a></li> --}}
+						{{-- <li><a href="#">Pages</a>
 							<ul class="submenu">
 								<li><a href="tour-details.html">Package Details</a></li>
 								<li><a href="blog-details.html">Blog Details</a></li>
 							</ul>
-						</li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="{{url('contact')}}">Contact</a></li>
+						</li> --}}
+						{{-- <li><a href="blog.html">Blog</a></li> --}}
+						<li><a href="{{url('contact')}}">Kontak</a></li>
 					</ul>
 				</div><!--- END ROW -->
 			</div><!--- END CONTAINER -->
@@ -1331,6 +1331,7 @@
 					</div>
 
 					<div id="testimonial-slider" class="owl-carousel text-center">
+                        @foreach ($registrations as $data)
 						<div class="single-testimonial">
 							<div class="test-img">
 								<img src="https://getmasum.com/html-preview/tripx/assets/img/review/1.png" width="80" alt="review image">
@@ -1346,13 +1347,14 @@
 							</div>
 
 							<div class="testimonial-bottom">
-								<h3 class="title">Evan Setiawan</h3>
+								<h3 class="title">{{$data->nama}}</h3>
 								<span class="designation">Network Engineer</span>
 							</div>
 
 						</div><!-- END single Testimonials -->
+                        @endforeach
 
-						<div class="single-testimonial">
+						{{-- <div class="single-testimonial">
 							<div class="test-img">
 								<img src="https://getmasum.com/html-preview/tripx/assets/img/review/2.png" width="80" alt="review image">
 								<div class="test_rev">
@@ -1370,9 +1372,9 @@
 								<h3 class="title">Frans Davidson</h3>
 								<span class="designation">Web Developer</span>
 							</div>
-						</div><!-- END single Testimonials -->
+						</div><!-- END single Testimonials --> --}}
 
-						<div class="single-testimonial">
+						{{-- <div class="single-testimonial">
 							<div class="test-img">
 								<img src="https://getmasum.com/html-preview/tripx/assets/img/review/3.png" width="80" alt="review image">
 								<div class="test_rev">
@@ -1391,7 +1393,7 @@
 								<h3 class="title">Christiano Ronaldo</h3>
 								<span class="designation">Football Player</span>
 							</div>
-						</div><!-- END single Testimonials -->
+						</div><!-- END single Testimonials --> --}}
 
 					</div>
 				</div>

@@ -97,6 +97,6 @@ class RegistrationController extends Controller
         $pdf = PDF::loadView('generate_pdf', compact('registration'));
 
         // Download PDF dengan nama 'registration.pdf'
-        return $pdf->download('generate_pdf');
+        return $pdf->download('generate_pdf.pdf');
     }
 }

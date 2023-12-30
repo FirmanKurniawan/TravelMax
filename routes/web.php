@@ -7,10 +7,12 @@ use App\Http\Controllers\SocialMediaController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\Controller;
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', [Controller::class, 'index']);
 
 Route::get('/about', function () {
     return view('about');
